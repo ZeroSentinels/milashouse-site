@@ -434,6 +434,18 @@
   .story-list li:nth-child(2) .mark{background:var(--gold);}
   .story-list li:nth-child(3) .mark{background:var(--red-light);}
 
+  /* ---------- BUSINESS SALES ---------- */
+  .wholesale-section{background:linear-gradient(180deg, #100D0A, #17120E); border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft);}
+  .wholesale-intro{max-width:600px; margin-bottom:44px;}
+  .wholesale-intro h2{font-size:2.4rem; line-height:1.12; font-weight:500; margin:14px 0 18px;}
+  .wholesale-intro p{color:var(--taupe); font-size:1rem; line-height:1.75;}
+  .wholesale-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;}
+  .wholesale-card{padding:28px 26px; border:1px solid var(--line-soft); background:rgba(41,32,22,0.54);}
+  .wholesale-card .card-number{display:block; font-size:0.68rem; letter-spacing:0.22em; color:var(--gold); margin-bottom:34px;}
+  .wholesale-card h3{font-family:'Fraunces', serif; font-size:1.35rem; font-weight:500; margin-bottom:12px; color:var(--cream);}
+  .wholesale-card p{color:var(--taupe); font-size:0.91rem; line-height:1.7;}
+  .wholesale-action{margin-top:38px;}
+
   /* ---------- CTA BAND ---------- */
   .cta-band{
     background:radial-gradient(ellipse at 50% -10%, rgba(198,162,68,0.16), transparent 55%), linear-gradient(180deg, #171310, #0E0C0A);
@@ -523,6 +535,7 @@
     .gallery-frame.tall{min-height:280px;}
     .steps-grid{grid-template-columns:1fr; gap:40px;}
     .step:not(:last-child)::after{display:none;}
+    .wholesale-grid{grid-template-columns:1fr;}
     .story .wrap{grid-template-columns:1fr;}
     .story-visual{order:2;}
     .story-text{order:1;}
@@ -718,6 +731,39 @@
   </div>
 </section>
 
+<!-- ================= VENTA EMPRESAS ================= -->
+<section class="section wholesale-section" id="empresas">
+  <div class="wrap">
+    <div class="wholesale-intro">
+      <span class="eyebrow">Venta mayorista</span>
+      <h2 class="display">Milanesas para tu <em>empresa</em></h2>
+      <p>Abastecemos negocios y equipos que buscan una alternativa casera, práctica y lista para cocinar. Cotizamos según las necesidades de cada pedido.</p>
+    </div>
+
+    <div class="wholesale-grid">
+      <article class="wholesale-card">
+        <span class="card-number">01 / NEGOCIOS</span>
+        <h3>Restaurantes y cafeterías</h3>
+        <p>Una opción versátil para complementar tu carta con milanesas de pollo, vacuno o berenjena.</p>
+      </article>
+      <article class="wholesale-card">
+        <span class="card-number">02 / EQUIPOS</span>
+        <h3>Oficinas y eventos</h3>
+        <p>Pedidos para colaciones, reuniones y celebraciones, coordinados con anticipación.</p>
+      </article>
+      <article class="wholesale-card">
+        <span class="card-number">03 / PLANIFICACIÓN</span>
+        <h3>Compras recurrentes</h3>
+        <p>Coordinamos pedidos periódicos para que siempre tengas stock disponible cuando lo necesites.</p>
+      </article>
+    </div>
+
+    <div class="wholesale-action">
+      <a class="btn-primary" href="#contacto">Solicitar cotización</a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CONTACTO ================= -->
 <section class="section contact-section" id="contacto">
   <div class="wrap contact-layout">
@@ -780,6 +826,7 @@
       <h5>Contacto</h5>
       <a href="https://wa.me/56988124020?text=Hola%20Mila%27s%20House%2C%20quiero%20hacer%20un%20pedido%20de%20milanesas%20caseras." target="_blank" rel="noopener">WhatsApp: +56 9 8812 4020</a>
       <a href="#contacto">Enviar una consulta</a>
+      <a href="#empresas">Venta mayorista</a>
       <a href="#productos">Ver sabores</a>
       <a href="#como-pedir">Cómo pedir</a>
     </div>
