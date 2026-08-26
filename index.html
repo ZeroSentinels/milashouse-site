@@ -739,6 +739,10 @@
           <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="+56 9 ..." required>
         </div>
         <div class="form-field full">
+          <label for="contact-email">Correo electrónico</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="form-field full">
           <label for="contact-message">¿En qué te ayudamos?</label>
           <textarea id="contact-message" name="message" placeholder="Por ejemplo: quiero cotizar 2 kilos de milanesas de pollo..." required></textarea>
         </div>
@@ -806,6 +810,7 @@
       '',
       'Nombre: ' + form.get('name'),
       'Teléfono: ' + form.get('phone'),
+      'Correo: ' + form.get('email'),
       'Consulta: ' + form.get('message')
     ].join('\n');
 
